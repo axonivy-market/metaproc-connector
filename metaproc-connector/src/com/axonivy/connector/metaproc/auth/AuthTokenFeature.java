@@ -21,7 +21,7 @@ public class AuthTokenFeature implements Feature {
   private static final String LOGIN_PATH = "/metarest/user/login";
 
   public static String TOKEN;
-  public static long TOKEN_EXPIRED_DURATION = 0;
+  public static long TOKEN_EXPIRED_TIME = 0;
 
   @Override
   public boolean configure(FeatureContext context) {
@@ -37,7 +37,7 @@ public class AuthTokenFeature implements Feature {
         // already in auth request
         return;
       }
-      if (TOKEN != null && TOKEN_EXPIRED_DURATION > System.currentTimeMillis()) {
+      if (TOKEN != null && TOKEN_EXPIRED_TIME > System.currentTimeMillis()) {
         context.getHeaders().add(TOKEN_HEADER, TOKEN);
         return;
       }
@@ -53,7 +53,7 @@ public class AuthTokenFeature implements Feature {
               .accept(MediaType.APPLICATION_JSON).post(entity)) {
         var node = response.readEntity(ObjectNode.class);
         TOKEN = node.get("loginResult").get("token").asText();
-        TOKEN_EXPIRED_DURATION = System.currentTimeMillis() + Long.valueOf(Ivy.var().get("metaproc.TokenExpiredDuration"));
+        TOKEN_EXPIRED_TIME = System.currentTimeMillis() + Long.valueOf(Ivy.var().get("metaproc.TokenExpiredDuration"));
         context.getHeaders().add(TOKEN_HEADER, TOKEN);
       } catch (Exception e) {
         Ivy.log().error(e.getMessage());
