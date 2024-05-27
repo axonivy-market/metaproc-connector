@@ -53,13 +53,13 @@ public class AuthTokenFeature implements Feature {
               .accept(MediaType.APPLICATION_JSON).post(entity)) {
         var node = response.readEntity(ObjectNode.class);
         TOKEN = node.get("loginResult").get("token").asText();
-        TOKEN_EXPIRED_TIME = System.currentTimeMillis() + getExpiredTime();
+        TOKEN_EXPIRED_TIME = System.currentTimeMillis() + getExpiredDuration();
         context.getHeaders().add(TOKEN_HEADER, TOKEN);
       }
     }
   }
   
-  private long getExpiredTime() {
+  private long getExpiredDuration() {
 	  return Long.valueOf(Ivy.var().get("metaproc.TokenExpiredDuration")) * 60 * 1000;
   }
 }
