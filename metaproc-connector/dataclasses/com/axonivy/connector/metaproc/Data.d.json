@@ -9,7 +9,6 @@
     "modifiers" : [ "PERSISTENT" ]
   }, {
     "name" : "blackboardRequest",
-    "type" : "com.axonivy.connector.metaproc.blackboard.request.BlackboardRequestData",
-    "modifiers" : [ "PERSISTENT" ]
+    "type" : "com.axonivy.connector.metaproc.blackboard.request.BlackboardRequestData"
   } ]
 }
