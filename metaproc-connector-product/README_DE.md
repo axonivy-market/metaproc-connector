@@ -1,33 +1,33 @@
-# #Roboterhaft Arbeitsgang Automatisierung (RPA) mit Meta:Proc
+# Robotic Process Automation (RPA) mit Meta:Proc
 
-Die Integration von die RPA Lösung von Meta:Proc Hilft du automatisierst
-genügend manuelle Tasks und verlässlich.
+Die Integration der RPA-Lösung von Meta:Proc hilft Ihnen dabei, manuelle
+Aufgaben effizient und zuverlässig zu automatisieren.
 
-Diese Extension bietet an du:
+Diese Erweiterung bietet Ihnen:
 
-- Eine Lösung gegründet weiter die meta:proc Suite von Meta:Proc
-  ([Https://www.metaproc.com/en/](https://www.metaproc.com/en/))
-- Kreuz-System Automatisierung ohne die Notwendigkeit für #existierend API
-  Zusammenhänge
-- Gebrauch verfügbar via ein bezahlt Schein Schlüssel
-- Ein preconfigured Demo Ausführung für leicht Adoption in euren eigenen
-  Projekten
+- Eine Lösung auf Basis der Meta:Proc-Suite von Meta:Proc
+  ([https://www.metaproc.com/en/](https://www.metaproc.com/en/))
+- Systemübergreifende Automatisierung ohne bestehende API-Verbindungen
+- Verwendung über einen kostenpflichtigen Lizenzschlüssel möglich.
+- Eine vorkonfigurierte Demo-Implementierung für die einfache Übernahme in Ihre
+  eigenen Projekte.
 
 ## Demo
 
-Der Demo Arbeitsgang exekutiert der RPA und wartet auf das Resultat.
+Der Demo-Prozess führt die RPA aus und wartet auf das Ergebnis.
 
-![Demo Arbeitsgang](images/demo.png)
+![Demo-Prozess](images/demo.png)
 
 ## Einrichtung
 
-Füg zu die Gefolgschaft `Variablen` zu eure `Variablen.yaml`:
+Fügen Sie die folgenden Variablen „ `“` zu Ihren Variablen „ `“ variables.yaml`
+hinzu:
 
-- `Variablen.metaproc.Url`
-- `Variablen.metaproc.Benutzername`
-- `Variablen.metaproc.Passwort`
+- `Variables.metaproc.Url`
+- `Variables.metaproc.Username`
+- `Variables.metaproc.Password`
 
-Und austauschen die Werte mit eurer #gegeben Einrichtung.
+Ersetzen Sie die Werte durch Ihre angegebenen Einstellungen.
 
 ```
 @variables.yaml@
