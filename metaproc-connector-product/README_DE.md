@@ -18,7 +18,7 @@ Der Demo-Prozess führt die RPA aus und wartet auf das Ergebnis.
 
 ![Demo-Prozess](images/demo.png)
 
-## Einrichtung
+## Setup
 
 Fügen Sie die folgenden Variablen „ `“` zu Ihren Variablen „ `“ variables.yaml`
 hinzu:
