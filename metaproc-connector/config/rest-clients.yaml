@@ -1,8 +1,10 @@
+# yaml-language-server: $schema=https://json-schema.axonivy.com/14.0-dev/config/rest-clients-1.json
 RestClients:
   metaproc:
-    UUID: dd465626-dd32-4679-886d-b85d740a345c
+    Name: metaproc
     Url: ${ivy.var.metaproc.Url}
     Icon: res:/webContent/icons/metaproc.png
     Features:
-    - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
-    - com.axonivy.connector.metaproc.auth.AuthTokenFeature
+      - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
+      - com.axonivy.connector.metaproc.auth.AuthTokenFeature
+    LegacyUUID: dd465626-dd32-4679-886d-b85d740a345c
