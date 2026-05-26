@@ -1,5 +1,5 @@
 {
-  "$schema" : "https://json-schema.axonivy.com/process/13.2.0/process.json",
+  "$schema" : "https://json-schema.axonivy.com/14.0-dev/project/process.json",
   "id" : "189D9D0E4F2E57D2",
   "kind" : "CALLABLE_SUB",
   "config" : {
@@ -51,7 +51,7 @@
       "config" : {
         "method" : "POST",
         "target" : {
-          "clientId" : "dd465626-dd32-4679-886d-b85d740a345c",
+          "clientId" : "metaproc",
           "path" : "/metarest/datagrid/blackboard",
           "headers" : {
             "Accept" : "application/json"

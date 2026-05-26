@@ -1,14 +1,12 @@
 {
-  "$schema" : "https://json-schema.axonivy.com/data-class/12.0.0/data-class.json",
+  "$schema" : "https://json-schema.axonivy.com/14.0-dev/project/data-class.json",
   "simpleName" : "Data",
   "namespace" : "com.axonivy.connector.metaproc",
-  "isBusinessCaseData" : false,
   "fields" : [ {
-    "name" : "identifier",
-    "type" : "String",
-    "modifiers" : [ "PERSISTENT" ]
+    "name" : "identifier"
   }, {
     "name" : "blackboardRequest",
-    "type" : "com.axonivy.connector.metaproc.blackboard.request.BlackboardRequestData"
+    "type" : "com.axonivy.connector.metaproc.blackboard.request.BlackboardRequestData",
+    "modifiers" : [ ]
   } ]
 }
